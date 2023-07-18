@@ -28,7 +28,7 @@ jobs:
         run: echo "Timezone set to ${{ env.TIMEZONE }}"
 
   build:
-    name: PrototypeKit - Customer Record
+    name: Build & Push
     needs: setup
     environment: ${{ needs.setup.outputs.environment }}
     env:
@@ -48,7 +48,7 @@ jobs:
           username: ${{ secrets.CAPROTOTYPEKITDEV001_REGISTRY_USERNAME }}
           password: ${{ secrets.CAPROTOTYPEKITDEV001_REGISTRY_PASSWORD }}
 
-      - name: Build and push 📦️
+      - name: Build & Push to ACR 📦️
         uses: docker/build-push-action@v4
         with:
           context: .
