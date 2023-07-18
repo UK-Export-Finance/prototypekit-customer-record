@@ -44,7 +44,7 @@ jobs:
       - name: Log in to container registry
         uses: docker/login-action@v2
         with:
-          registry: https://{{ env.REGISTRY_NAME }}.azurecr.io
+          registry: https://${{ env.REGISTRY_NAME }}.azurecr.io
           username: ${{ secrets.CAPROTOTYPEKITDEV001_REGISTRY_USERNAME }}
           password: ${{ secrets.CAPROTOTYPEKITDEV001_REGISTRY_PASSWORD }}
 
