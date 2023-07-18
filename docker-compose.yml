@@ -1,9 +1,9 @@
 version: "3"
 services:
-  prototype-kit:
+  prototypekit-customer-record:
     build:
       context: .
-    image: prototype-kit-cr
+    image: prototypekit-customer-record
     restart: always
     ports:
       - "3000:3000"
