@@ -1,6 +1,17 @@
 {
+  "name": "govuk-prototype-kit",
+  "description": "Rapidly create HTML prototypes of GOV.UK services",
+  "version": "12.1.1",
+  "private": true,
+  "engines": {
+    "node": ">=12.0.0 <17.0.0"
+  },
+  "scripts": {
+    "start": "node start",
+    "build": "node lib/build/generate-assets",
+    "serve": "node listen-on-port"
+  },
   "dependencies": {
-    "jquery": "^3.7.0",
     "@ministryofjustice/frontend": "^1.5.0",
     "accessible-autocomplete": "^2.0.4",
     "acorn": "^8.5.0",
@@ -35,22 +46,6 @@
     "sass": "^1.49.10",
     "sync-request": "^6.0.0",
     "universal-analytics": "^0.5.3",
-    "uuid": "^8.3.2",
-    "@govuk-prototype-kit/common-templates": "^1.1.1",
-    "@govuk-prototype-kit/step-by-step": "^2.1.0",
-    "@govuk-prototype-kit/task-list": "^1.0.0",
-    "@ministryofjustice/frontend": "^1.6.6",
-    "govuk-frontend": "^4.5.0",
-    "govuk-prototype-filters": "^0.1.0",
-    "govuk-prototype-kit": "^13.7.0",
-    "hmrc-frontend": "5.46.0"
-  },
-  "scripts": {
-    "dev": "govuk-prototype-kit dev",
-    "serve": "govuk-prototype-kit serve",
-    "start": "govuk-prototype-kit start",
-    "start2": "node start",
-    "build": "node lib/build/generate-assets",
-    "serve2": "node listen-on-port"
+    "uuid": "^8.3.2"
   }
 }
